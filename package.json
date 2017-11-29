@@ -18,9 +18,13 @@
     "graphql": "^0.11.7"
   },
   "devDependencies": {
+    "apollo-cache-inmemory": "^1.1.1",
+    "apollo-client": "^2.0.3",
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "graphql-tag": "^2.5.0",
+    "graphql-tools": "^2.10.0",
     "rollup-plugin-babel": "^3.0.2"
   }
 }
