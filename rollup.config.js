@@ -1,4 +1,5 @@
 import babel from "rollup-plugin-babel";
+import resolve from "rollup-plugin-node-resolve";
 
 const globals = {
   // Apollo
@@ -17,7 +18,11 @@ export default {
   globals,
 
   sourcemap: true,
+  external: ["graphql", "apollo-link"],
   plugins: [
+    resolve({
+      browser: true
+    }),
     babel({
       exclude: "node_modules/**" // only transpile our source code
     })
