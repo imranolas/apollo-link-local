@@ -1,0 +1,10 @@
+{
+  "name": "apollo-link-local",
+  "version": "0.0.1",
+  "description": "Apollo link that executes against a local schema",
+  "main": "./lib/bundle.umd.js",
+  "repository": "git+https://github.com/imranolas/apollo-link-local.git",
+  "author": "Imran Sulemanji <imran.sulemanji@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
