@@ -1,5 +1,5 @@
 import { ApolloLink, Observable } from "apollo-link";
-import { graphql, print } from "graphql";
+import { execute } from "graphql";
 
 export class LocalLink extends ApolloLink {
   constructor({ schema } = {}) {
@@ -15,9 +15,9 @@ export class LocalLink extends ApolloLink {
   request(operation) {
     const { query, variables, operationName } = operation;
     return new Observable(obs => {
-      graphql(
+      execute(
         this.executableSchema,
-        print(query),
+        query,
         null,
         operation.getContext(),
         variables,
