@@ -2,6 +2,8 @@
   <h1>apollo-link-local</h1>
 </div>
 
+**This package has been deprecated. Please use [`apollo-link-schema`](https://github.com/apollographql/apollo-link) instead.**
+
 ## Purpose
 
 An Apollo Link to execute queries against a local schema. Useful for SSR query
